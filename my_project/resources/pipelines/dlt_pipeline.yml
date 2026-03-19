@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_dlt_pipeline1:
+      name: DLT_Pipeline1
+      libraries:
+        - glob:
+            include: /Workspace/Users/vivek.ajay.p50@gmail.com/declarative_pipelines/my_project/src/DLT_Root/transformations/**
+      schema: dlt_schema
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: my_dlt
+      serverless: true
+      root_path: /Workspace/Users/vivek.ajay.p50@gmail.com/declarative_pipelines/my_project/src/DLT_Root
